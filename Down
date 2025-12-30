@@ -1,0 +1,42 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "⚠️ IOER HUB | Down 🖥️📱",
+   LoadingTitle = "Main Scripts",
+   LoadingSubtitle = "BY IOER HUB",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Example Hub"
+   },
+})
+
+local Back = Window:CreateTab("⚠️ Information", nil)
+
+
+Rayfield:Notify({
+   Title = "Notification Alert",
+   Content = "Thank You For Use This Scripts",
+   Duration = 5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+
+local MainSection = Back:CreateSection("Down IOER Hub")
+local Paragraph = Back:CreateParagraph({Title = "❌ | announcement", Content = "IOER HUB Down, Please Wait Until Update"})
+local MainSection = Back:CreateSection("Testing Version")
+local Paragraph = Back:CreateParagraph({Title = "‼️ | Checking Version", Content = "Code Erorr: 404, Checking Version....."})
+local Paragraph = Back:CreateParagraph({Title = "⛔ | V1.2.50", Content = "String: 0x1a24f7d9080"})
+local Paragraph = Back:CreateParagraph({Title = "⛔ | V1.2.50", Content = "String: 0x1a253b50fc0"})
+local Paragraph = Back:CreateParagraph({Title = "⛔ | V1.2.50", Content = "String: 0x1a259d8d200"})
+local Paragraph = Back:CreateParagraph({Title = "⛔ | V1.2.50", Content = "String: 0x1a26332eec0"})
+local MainSection = Back:CreateSection("Testing Result")
+local Paragraph = Back:CreateParagraph({Title = "[Debug]", Content = "Bycode Has Been Failed To Loaded Rayfield"})
+local Paragraph = Back:CreateParagraph({Title = "[Info]", Content = "Please Close Rayfield And Try Again Later Or Wait Until It's Updated!"})
